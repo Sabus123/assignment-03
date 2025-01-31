@@ -1,15 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+      
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font familly -->
+         <style>
+            .font-sora{
+            font-family: "Sora", serif;
+         }
+         </style>
+    <!-- Tailwaind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Customized color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-praimary': '#179800',
+                'bg-secoundary': 'rgba(239, 235, 227, 1)',
+              },
+            },
+          },
+        }
+      </script>
+
 </head>
-<body>
+<body class="font-sora">
+    <!-- navbar part -->
+     <nav>
+
+     </nav>
     <!-- Header part -->
-     <header></header>
+     <header>
+        <!-- banner part -->
+         <section class="my-24">
+           <div class="lg:text-center px-7 py-7">
+            <h1 class="text-5xl font-bold text-center py-7">Freshness <span class="text-btn-praimary font-bold">You Can<br>
+                Count</span> On, Prices You’ll Love!</h1>
+                <p class="lg:text-gray-500 text-xl ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p>
+           </div>
+           <div class="flex justify-center py-7">
+            <img class="text-center h-[600px] w-[600px]" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
+         </section>
+         <!-- image-banner -->
+          <!-- <section class="my-24 px-100 ">
+            <div class="flex justify-center">
+                <img class="text-center h-[600px] w-[600px]" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+          </section> -->
+     </header>
      <!-- Main part -->
-      <main></main>
+      <main class="my-24">
+        <!-- services part -->
+         <section class="px-14">
+            <h5 class="text-xl text-btn-praimary py-12">Services</h5>
+            
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-7 space-x-1">
+                <!-- card-1 -->
+                <div class="card card-compact bg-bg-secoundary py-10  shadow-xl">
+                    <figure>
+                      <img
+                        class="bg-slate-100 rounded-full" src="c2-assets/service.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title flex justify-center items-center">24/7 Services </h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                  </div>
+                  <!-- card-2 -->
+                  <div class="card card-compact bg-bg-secoundary py-10  shadow-xl">
+                    <figure>
+                      <img class="bg-slate-100 rounded-full"
+                        src="c2-assets/delivery.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title flex justify-center items-center">Fast Delivery</h2>
+                      <p>"Fast, fresh, and right to your door! 🚀📦
+                        Reliable delivery, because your time matters. ⏳💨
+                        From our store to your doorstep—seamless and hassle-free! 🏡✨"</p>
+                    </div>
+                  </div>
+                  <!-- card-3 -->
+                  <div class="card card-compact bg-bg-secoundary py-10  shadow-xl">
+                    <figure>
+                      <img class="bg-slate-100 rounded-full"
+                        src="c2-assets/healthy.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title flex justify-center items-center">Healthy Products </h2>
+                      <p>Eat natural, stay healthy, live happy. 🌿✨
+                        Small daily choices create a lifetime of wellness. 💪🥗
+                        Your body thrives on what you nourish it with. 💚</p>
+                    </div>
+                  </div>
+            </div>
+         </section>
+      </main>
       <!-- Footer part -->
        <footer></footer>
 </body>
